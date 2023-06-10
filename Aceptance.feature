@@ -1,122 +1,164 @@
-US01:
 Feature: Acceso a información confiable sobre nutrición en línea
 
-Scenario: El usuario guarda información confiable sobre nutrición
-Given que el usuario ha ingresado a la plataforma
-When el usuario escribe información confiable sobre nutrición
-And presiona el botón "Guardar Información"
-Then el sistema debería guardar la información correctamente
+Scenario: El usuario desea encontrar información confiable sobre nutrición en línea
 
-Scenario: El usuario cancela la escritura de información confiable sobre nutrición
-Given que el usuario ha ingresado a la plataforma
-When el usuario escribe información confiable sobre nutrición
-And presiona el botón "Cancelar Información"
-Then el sistema debería cancelar la escritura de la información
+Given que el usuario busca información sobre nutrición en línea
+When el usuario navega hacia la opción de información confiable
+Then el usuario debe encontrar información basada en evidencia científica y verificada por expertos en nutrición
 
-US02:
+---
+
 Feature: Recomendaciones prácticas de comidas rápidas y saludables
 
-Scenario: El usuario guarda una recomendación de comida saludable
-Given que el usuario ha ingresado a la plataforma
-When el usuario selecciona una recomendación de comida saludable
-And presiona el botón "Guardar Recomendación"
-Then el sistema debería guardar la recomendación correctamente
+Scenario: El usuario desea encontrar recomendaciones prácticas de comidas rápidas y saludables
 
-US03:
+Given que el usuario busca recomendaciones de comidas rápidas y saludables
+When el usuario navega hacia la opción de recomendaciones de comidas saludables
+Then el usuario debe encontrar opciones saludables y fáciles de preparar
+
+---
+
 Feature: Consejos personalizados de expertos en alimentación
 
-Scenario: El usuario guarda un consejo personalizado por nutricionista
-Given que el usuario ha ingresado a la plataforma
-When el usuario escribe un consejo personalizado por nutricionista
-And presiona el botón "Guardar Consejo Personalizado"
-Then el sistema debería guardar el consejo personalizado correctamente
+Scenario: El usuario desea recibir consejos personalizados de expertos en alimentación
 
-Scenario: El usuario ve la lista de consejos personalizados por nutricionistas
-Given que el usuario ha ingresado a la plataforma
-When el usuario selecciona la opción "Lista de Consejos"
-Then el sistema debería mostrar la lista de consejos personalizados correctamente
+Given que el usuario desea recibir consejos personalizados de expertos en alimentación
+When el usuario navega hacia la opción de consejos personalizados
+Then el usuario debe encontrar consejos basados en sus necesidades dietéticas y objetivos
 
-US04:
+---
+
 Feature: Programa de seguimiento nutricional para perder peso
 
-Scenario: El usuario guarda sus resultados de seguimiento nutricional
-Given que el usuario ha ingresado a la plataforma
-When el usuario ingresa sus datos personales y resultados de seguimiento nutricional
-And presiona el botón "Guardar y Mostrar Resultados"
-Then el sistema debería guardar los resultados y mostrarlos correctamente
+Scenario: El usuario desea realizar un seguimiento nutricional para perder peso
 
-US05:
+Given que el usuario desea realizar un seguimiento nutricional para perder peso
+When el usuario navega hacia la opción de seguimiento nutricional
+Then el usuario debe poder registrar sus datos personales y mantener un seguimiento de su progreso para perder peso
+
+---
+
 Feature: Registro de alimentos y suplementos para aumentar energía y vitalidad
 
-Scenario: El usuario registra un alimento o suplemento
-Given que el usuario ha ingresado a la plataforma
-When el usuario registra un alimento o suplemento consumido
-And presiona el botón "Guardar Registros"
-Then el sistema debería guardar el registro correctamente
+Scenario: El usuario desea registrar sus alimentos y suplementos para aumentar energía y vitalidad
 
-US06:
+Given que el usuario desea registrar sus alimentos y suplementos
+When el usuario navega hacia la opción de registro de alimentos y suplementos
+Then el usuario debe poder registrar los alimentos y suplementos consumidos y llevar un seguimiento de su ingesta diaria
+
+---
+
 Feature: Orientación especializada para adaptar la alimentación a necesidades dietéticas
 
-Scenario: El usuario ingresa orientación personalizada
-Given que el usuario ha ingresado a la plataforma
-When el usuario ingresa su orientación dietética personalizada
-And presiona el botón "Ingresar Orientación Personalizada"
-Then el sistema debería guardar la orientación personalizada correctamente
+Scenario: El usuario desea recibir orientación especializada para adaptar su alimentación a sus necesidades dietéticas
 
-US07:
-Feature: Diseño de aplicación intuitivo
+Given que el usuario desea recibir orientación especializada para adaptar su alimentación
+When el usuario navega hacia la opción de orientación especializada
+Then el usuario debe poder recibir recomendaciones personalizadas basadas en sus necesidades dietéticas
 
-Scenario: El usuario filtra instituciones educativas por tipo
-Given que el usuario ha ingresado a la plataforma
-When el usuario selecciona filtrar por tipo de institución educativa
-And selecciona "pública" o "privada"
-Then el sistema debería mostrar solo las instituciones educativas del tipo seleccionado correctamente
+---
 
-US08:
-Feature: Búsqueda de institución educativa por nivel de enseñanza y costos educativos
+Feature: Prácticas de nutrición para optimizar el rendimiento deportivo
 
-Scenario: El usuario filtra instituciones educativas por nivel de enseñanza
-Given que el usuario ha ingresado a la plataforma
-When el usuario selecciona filtrar por nivel de enseñanza
-And selecciona un nivel específico
-Then el sistema debería mostrar solo las instituciones educativas con nivel de enseñanza mayor o igual al seleccionado correctamente
- 
-Scenario: El usuario filtra instituciones educativas por costo educativo
-Given que el usuario ha ingresado a la plataforma
-When el usuario selecciona filtrar por costo educativo
-And selecciona un valor máximo
-Then el sistema debería mostrar solo las instituciones educativas cuyo costo no supere el valor máximo seleccionado correctamente
+Scenario: El usuario desea conocer prácticas de nutrición para optimizar su rendimiento deportivo
 
-US10:
-Feature: Búsqueda geográfica de instituciones educativas
-Como usuario, quiero buscar instituciones educativas cercanas a mi ubicación geográfica.
+Given que el usuario desea conocer prácticas de nutrición para optimizar su rendimiento deportivo
+When el usuario navega hacia la opción de prácticas de nutrición deportiva
+Then el usuario debe encontrar información útil y específica sobre nutrición deportiva
 
-Scenario: Buscar instituciones cercanas a mi ubicación
-Given que ingresé a la aplicación
-When selecciono la opción de búsqueda de instituciones educativas
-And selecciono la opción de "Búsqueda geográfica"
-And selecciono mi ubicación actual
-And ajusto el radio de búsqueda a 5 km
-Then debería ver una lista de las instituciones educativas dentro del radio de búsqueda
-And todas las instituciones de la lista deberían estar ordenadas por cercanía a mi ubicación
+---
 
-US11:
-Feature: Filtros de búsqueda por rigurosidad de calificación del docente
-Como usuario, quiero poder buscar instituciones educativas según el nivel de calificación de sus docentes.
+Feature: Alimentos y nutrientes para mejorar la salud mental
 
-Scenario: Buscar instituciones con docentes altamente calificados
-Given que ingresé a la aplicación
-When selecciono la opción de búsqueda de instituciones educativas
-And selecciono la opción de "Filtro por rigurosidad de calificación del docente"
-And especifico un nivel de calificación alto
-Then debería ver una lista de las instituciones educativas cuyos docentes tengan una calificación alta
-And todas las instituciones de la lista deberían cumplir con los demás filtros aplicados anteriormente
+Scenario: El usuario desea conocer alimentos y nutrientes para mejorar su salud mental
 
-Scenario: Buscar instituciones con docentes calificados pero no demasiado rigurosos
-Given que ingresé a la aplicación
-When selecciono la opción de búsqueda de instituciones educativas
-And selecciono la opción de "Filtro por rigurosidad de calificación del docente"
-And especifico un nivel de calificación medio-bajo
-And especifico un nivel de rigurosidad bajo
-Then debería ver una lista de las instituciones educativas cuyos docentes tengan una calificación media-baja y un nivel de rigurosidad bajo
-And todas las instituciones de la lista deberían cumplir con los demás filtros aplicados anteriormente
+Given que el usuario desea conocer alimentos y nutrientes para mejorar su salud mental
+When el usuario navega hacia la opción de alimentos y nutrientes saludables
+Then el usuario debe poder encontrar información detallada sobre los alimentos y nutrientes que mejoran la salud mental
+
+---
+
+Feature: Acceso a planes de nutrición que me brinden información personalizada
+
+Scenario: El usuario desea acceder a planes de nutrición personalizados
+
+Given que el usuario desea acceder a planes de nutrición personalizados
+When el usuario navega hacia la opción de planes de nutrición personalizados
+Then el usuario debe poder encontrar planes de nutrición adaptados a sus necesidades dietéticas y objetivos específicos
+
+---
+
+Feature: Recomendaciones y motivación para mantener hábitos alimenticios y de bienestar
+
+Scenario: El usuario desea recibir recomendaciones y motivación para mantener hábitos alimenticios saludables
+
+Given que el usuario desea recibir recomendaciones y motivación para mantener hábitos alimenticios saludables
+When el usuario navega hacia la opción de recomendaciones y motivación
+Then el usuario debe poder encontrar consejos útiles y motivación para mantener hábitos alimenticios saludables
+
+---
+
+Feature: Acceso a información confiable y basada en evidencia científica
+
+Scenario: El usuario puede ver información verificada por los científicos
+
+Given el usuario ha iniciado sesión en la aplicación
+When el usuario selecciona la opción "Información confiable"
+Then se muestra una lista de temas verificados por los científicos
+And el usuario puede seleccionar un tema para ver más detalles
+
+---
+
+Feature: Programas personalizados adaptados a las necesidades y objetivos de los jóvenes adultos
+
+Scenario: El usuario puede ver programas personalizados según sus necesidades
+
+Given el usuario ha iniciado sesión en la aplicación
+When el usuario selecciona la opción "Programas personalizados"
+Then se muestra una lista de programas personalizados disponibles
+And el usuario puede filtrar la lista por necesidades específicas
+And el usuario puede seleccionar un programa para ver más detalles
+
+---
+
+Feature: Pautas y prácticas para seguir una alimentación equilibrada
+
+Scenario: El usuario puede ver las pautas y prácticas para seguir una alimentación equilibrada
+
+Given el usuario ha iniciado sesión en la aplicación
+When el usuario selecciona la opción "Pautas y prácticas"
+Then se muestran las recomendaciones para seguir una alimentación equilibrada basadas en las necesidades del usuario
+And el usuario puede seleccionar una recomendación para ver más detalles
+
+---
+
+Feature: Seguimiento y apoyo continuo para mantener la motivación y el compromiso
+
+Scenario: El usuario puede ver su seguimiento y recibir apoyo
+
+Given el usuario ha iniciado sesión en la aplicación
+When el usuario selecciona la opción "Seguimiento y apoyo"
+Then se muestran los resultados de seguimientos anteriores del usuario
+And el usuario puede recibir mensajes de apoyo personalizados
+
+---
+
+Feature: Actualización de investigaciones y tendencias de nutrición
+
+Scenario: El usuario puede ver las últimas actualizaciones sobre investigaciones y tendencias de nutrición
+
+Given el usuario ha iniciado sesión en la aplicación
+When el usuario selecciona la opción "Actualizaciones de nutrición"
+Then se muestran las últimas noticias e investigaciones sobre nutrición
+And el usuario puede seleccionar una noticia para ver más detalles
+
+---
+
+Feature: Herramientas y recursos prácticos para el seguimiento de la alimentación y progreso
+
+Scenario: El usuario puede acceder a herramientas y recursos prácticos
+
+Given el usuario ha iniciado sesión en la aplicación
+When el usuario selecciona la opción "Herramientas y recursos"
+Then se muestra una lista de herramientas disponibles, como diarios de alimentos y registro de progreso
+And el usuario puede seleccionar una herramienta para utilizarla
