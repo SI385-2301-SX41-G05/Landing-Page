@@ -69,17 +69,46 @@ header {
   
   /* Estilos para la sección */
   /*section 1*/
+  #hero h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    width: 400px;
+  }
+  .Pantalla img{
+    display: inline-block;
+    margin-left: 780px;
+    margin-top: -490px;
+    text-align: right;
+    padding-bottom: 50px;
+  }
+  #hero p {
+    margin-left: 55px;
+    font-size: 20px;
+    display: flex;
+  }
   #hero {
     background-color:#ffffff;
     width: 100%;
-    padding: 20px 0;
-    margin: 0;
+    padding: 0px 0px;
+  
+  }
+  #hero button img {
+    width: 20vh;
+    margin-left: 0px;
   }
   
-  #Descarga {
-    padding: -150px;
+  #hero button {
+    background-color: #ffffff;
+    color: #ffffff;
+    width: 20vh;
+    border: none;
+    margin-top: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 20px;
   }
-  
   
   /*section 2*/
   #about {
