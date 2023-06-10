@@ -1,0 +1,329 @@
+/* Estilos para el encabezado */
+header {
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*logo*/
+  .Logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Logo h1 {
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .Logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    order: -1; 
+  }
+  
+  .imagen-redonda {
+    border-radius: 50%;
+  }
+  
+  /*Navegacion*/
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  header > div:last-child {
+    display: flex;
+    align-items: center;
+  }
+  
+  header > div:last-child img {
+    margin-right: 10px;
+  }
+  
+  /* Estilos para la sección */
+  /*section 1*/
+  #hero {
+    background-color:#ffffff;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+  }
+  
+  #Descarga {
+    padding: -150px;
+  }
+  
+  
+  /*section 2*/
+  #about {
+    background-color:#ccffcc;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+  }
+  
+  .containers2 {
+    text-align: center;
+  }
+  
+  .abou {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .abou img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .abou h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .abou p {
+    font-size: 16px;
+  }
+  
+  .containers2 h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /*section 3*/
+  #meals{
+    background-color:#ffffff;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+  }
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container3 h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .container3 p {
+    margin: 10px 0;
+  }
+  
+  .container3 img {
+    margin: 10px;
+  }
+  
+  .container3 h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  
+  .feature i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00b894;
+  }
+  
+  
+  .feature h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .feature p {
+    margin: 10px 0;
+  }
+  
+  .container3 .left-half {
+    width: 50%;
+  }
+  
+  .container3 .right-half {
+    width: 50%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container3 {
+      flex-direction: column;
+    }
+  
+    .container3 .left-half,
+    .container3 .right-half {
+      width: 100%;
+    }
+  }
+  
+  /*section 4*/
+  #fun{
+    background-color:#ccffcc;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .category {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .category img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .category h2 {
+    margin-top: 10px;
+  }
+  
+  /*section 5*/
+  #plan{
+    background-color:#ffffff;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+  }
+  
+  .containers5 {
+    text-align: center;
+  }
+  
+  .plan {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .plan img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .plan p {
+    font-size: 16px;
+  }
+  
+  .container5 {
+    text-align: center;
+  }
+  
+  .container5 h1 {
+    margin: 20px 0;
+  }
+  
+  .container5 .plan {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .container5 .plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .container5 .plan p {
+    font-size: 16px;
+  }
+  
+  
+  /*Botones*/
+  button {
+    background-color: #006400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  /*Footer*/
+  
+  footer {
+    background-color: green;
+  }
+  
+  .containerf {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-media li {
+    margin-right: 10px;
+  }
+  
+  .social-media a {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .p1 {
+    color: white;
+  }
+  
