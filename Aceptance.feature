@@ -2,7 +2,7 @@ Feature: Acceso a información confiable sobre nutrición en línea
 
 Scenario: El usuario desea encontrar información confiable sobre nutrición en línea
 
-Given que el usuario busca información sobre nutrición en línea
+Given el usuario busca información sobre nutrición en línea
 When el usuario navega hacia la opción de información confiable
 Then el usuario debe encontrar información basada en evidencia científica y verificada por expertos en nutrición
 
@@ -12,7 +12,7 @@ Feature: Recomendaciones prácticas de comidas rápidas y saludables
 
 Scenario: El usuario desea encontrar recomendaciones prácticas de comidas rápidas y saludables
 
-Given que el usuario busca recomendaciones de comidas rápidas y saludables
+Given el usuario busca recomendaciones de comidas rápidas y saludables
 When el usuario navega hacia la opción de recomendaciones de comidas saludables
 Then el usuario debe encontrar opciones saludables y fáciles de preparar
 
@@ -22,7 +22,7 @@ Feature: Consejos personalizados de expertos en alimentación
 
 Scenario: El usuario desea recibir consejos personalizados de expertos en alimentación
 
-Given que el usuario desea recibir consejos personalizados de expertos en alimentación
+Given el usuario desea recibir consejos personalizados de expertos en alimentación
 When el usuario navega hacia la opción de consejos personalizados
 Then el usuario debe encontrar consejos basados en sus necesidades dietéticas y objetivos
 
@@ -32,7 +32,7 @@ Feature: Programa de seguimiento nutricional para perder peso
 
 Scenario: El usuario desea realizar un seguimiento nutricional para perder peso
 
-Given que el usuario desea realizar un seguimiento nutricional para perder peso
+Given el usuario desea realizar un seguimiento nutricional para perder peso
 When el usuario navega hacia la opción de seguimiento nutricional
 Then el usuario debe poder registrar sus datos personales y mantener un seguimiento de su progreso para perder peso
 
@@ -42,7 +42,7 @@ Feature: Registro de alimentos y suplementos para aumentar energía y vitalidad
 
 Scenario: El usuario desea registrar sus alimentos y suplementos para aumentar energía y vitalidad
 
-Given que el usuario desea registrar sus alimentos y suplementos
+Given el usuario desea registrar sus alimentos y suplementos
 When el usuario navega hacia la opción de registro de alimentos y suplementos
 Then el usuario debe poder registrar los alimentos y suplementos consumidos y llevar un seguimiento de su ingesta diaria
 
@@ -52,7 +52,7 @@ Feature: Orientación especializada para adaptar la alimentación a necesidades 
 
 Scenario: El usuario desea recibir orientación especializada para adaptar su alimentación a sus necesidades dietéticas
 
-Given que el usuario desea recibir orientación especializada para adaptar su alimentación
+Given el usuario desea recibir orientación especializada para adaptar su alimentación
 When el usuario navega hacia la opción de orientación especializada
 Then el usuario debe poder recibir recomendaciones personalizadas basadas en sus necesidades dietéticas
 
@@ -62,7 +62,7 @@ Feature: Prácticas de nutrición para optimizar el rendimiento deportivo
 
 Scenario: El usuario desea conocer prácticas de nutrición para optimizar su rendimiento deportivo
 
-Given que el usuario desea conocer prácticas de nutrición para optimizar su rendimiento deportivo
+Given el usuario desea conocer prácticas de nutrición para optimizar su rendimiento deportivo
 When el usuario navega hacia la opción de prácticas de nutrición deportiva
 Then el usuario debe encontrar información útil y específica sobre nutrición deportiva
 
@@ -72,7 +72,7 @@ Feature: Alimentos y nutrientes para mejorar la salud mental
 
 Scenario: El usuario desea conocer alimentos y nutrientes para mejorar su salud mental
 
-Given que el usuario desea conocer alimentos y nutrientes para mejorar su salud mental
+Given el usuario desea conocer alimentos y nutrientes para mejorar su salud mental
 When el usuario navega hacia la opción de alimentos y nutrientes saludables
 Then el usuario debe poder encontrar información detallada sobre los alimentos y nutrientes que mejoran la salud mental
 
@@ -82,7 +82,7 @@ Feature: Acceso a planes de nutrición que me brinden información personalizada
 
 Scenario: El usuario desea acceder a planes de nutrición personalizados
 
-Given que el usuario desea acceder a planes de nutrición personalizados
+Given el usuario desea acceder a planes de nutrición personalizados
 When el usuario navega hacia la opción de planes de nutrición personalizados
 Then el usuario debe poder encontrar planes de nutrición adaptados a sus necesidades dietéticas y objetivos específicos
 
@@ -92,7 +92,7 @@ Feature: Recomendaciones y motivación para mantener hábitos alimenticios y de 
 
 Scenario: El usuario desea recibir recomendaciones y motivación para mantener hábitos alimenticios saludables
 
-Given que el usuario desea recibir recomendaciones y motivación para mantener hábitos alimenticios saludables
+Given el usuario desea recibir recomendaciones y motivación para mantener hábitos alimenticios saludables
 When el usuario navega hacia la opción de recomendaciones y motivación
 Then el usuario debe poder encontrar consejos útiles y motivación para mantener hábitos alimenticios saludables
 
