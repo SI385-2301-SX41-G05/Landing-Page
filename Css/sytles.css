@@ -389,6 +389,85 @@ header {
       width: 100%;
     }
   }
+
+  .contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.contenedors3 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.contenedors3 figure {
+    position: relative;
+    height: 250px;
+    cursor: pointer;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.contenedors3 figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.contenedors3 figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ccffcc96;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedors3 figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedors3 figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedors3 figure:hover > img {
+    transform: scale(1.3);
+}
+
+.contenedors3 figure .capa h3 {
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+
+.contenedors3 figure .capa p {
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+
+
   
   /*section 4*/
   #fun{
