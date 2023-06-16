@@ -605,9 +605,8 @@ header {
 
 
 
-  /*seccion  caracteristicas */
-
-  #carateriticas{
+  /*seccion  categorias */
+  #my-cards{
     display: flex;
     
   }
