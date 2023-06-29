@@ -580,7 +580,66 @@ header {
 
 
   /*seccion  categorias */
-  #my-cards{
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .carousel-item:hover .carousel-caption {
+    opacity: 1;
+  }
+  .carousel-item img {
+    margin-left: 1px; /* Ajusta el valor del margen izquierdo según tus preferencias */
+    border-radius: 10%; /* Establece el valor de border-radius para hacer el borde circular */
+
+  }
+  .carousel-item img {
+    margin-right: 1px; /* Ajusta el valor del margen drecho según tus preferencias */
+  }
+
+  .carousel-active p {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .carousel-item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  /*para que el fondo del texto sea transparente
+  .carousel-caption {
+    background-color: transparent;
+  } */
+  
+  .carousel-caption {
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 50%;
+  }
+  
+  .carousel-caption:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /*Centrar el h2*/
+   h2 {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+   h2:hover {
+    font-weight: bold;  /* color del h2 negro y en negrita*/
+    transform: scale(1.1);
+  }
+
+  section {
+    margin-bottom: 100px; /* Ajusta el valor del margen según tus preferencias */
   }
