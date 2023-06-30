@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vitality</title>
     <link rel="stylesheet" href="Css/sytles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="icon" href="images/Vitality.png" type="image/png">
     <style>
         .plan {
             margin-bottom: 50px;
@@ -17,14 +18,16 @@
 <body>
     <header class="header">
         <div class="logo">
+          <a href="Index.html" class="app-name">
             <img src="images/Vitality.png" alt="Logo de la marca">
+          </a>
         </div>
         <nav>
            <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">Segmentos</a></li>
             <li><a href="#meals">Quienes Somos</a></li>
-            <li><a href="#fun">Funcionalidades</a></li>
+            <li><a href="#my-hero">Funcionalidades</a></li>
             <li><a href="#plan">Plan</a></li>
             <li><a href="#">Video team</a></li>
            </ul>            
@@ -47,16 +50,36 @@
 
     </header>
 <main>
-    <section id="hero">
-        <div class="container1">
-            <h1 style="padding-top: 110px">La App te permitira crear dietas y rutinas nutricionales para mejorar tu salud en tu vida diaria</h1>
+  <section id="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="container1">
+            <h1 class="pt-4">La App te permitirá crear dietas y rutinas nutricionales para mejorar tu salud en tu vida diaria</h1>
             <p>Mejora tu vida descargando la app</p>
-          
-        </div> 
-        <button id="button"><img src="images/GooglePlay.png" alt></button>    
-        <button id="buttonn"><img src="images/apple.png" alt></button> 
-        <div class="Pantalla"><img src="images/pantalla.jpg" alt></div>
-    </section>
+            <div>
+              <a href="https://www.figma.com/proto/kuuq1HwLkxScm7BqgqgFvU/Cosmo-Nutrition-%22Vitality%22?type=design&node-id=187-2589&t=UfUlQV1x0bDIoquu-0&scaling=scale-down&page-id=126%3A1723&starting-point-node-id=187%3A2589&show-proto-sidebar=1" class="btn btn-success" style="position: absolute; top: 80%; left: 26%; transform: translate(-5%, -5%);">Downloads</a>
+            </div>
+            <div style="position: absolute; top: 60%; left: 10%; transform: translate(-5%, -5%);">
+              <button><img src="images/GooglePlay.png" alt="Google Play" class="download-button"></button>
+              <button><img src="images/apple.png" alt="App Store" class="download-button"></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mt-4">
+            <img src="images/pantalla.jpg" alt="Pantalla de la App" class="app-screen img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p  style="position: absolute; top: 90%; left: 10%; transform: translate(-5%, -5%);">Resultados de la descargar</p>
+            <div>
+              <a href="Grafico.html" class="btn btn-success" style="position: absolute; top: 98%; left: 19%; transform: translate(-5%, -5%);">Resultados</a>
+            </div>
+    </div>
+  </section>
     <section id="about">
         <div class="container">
           <h1 class="text-center">SEGMENTOS</h1>
@@ -146,7 +169,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="my-hero">
       <h2>Categorías</h2>
       <div class="bd-example">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -230,7 +253,18 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   </section>
+  <style>
+    #plan {
+      height: 75vh; /* Ajusta la altura según el tamaño deseado */
+    }
+    #my-hero
+    {
+      height: 70vh;
+      background-color: #ccffcc
+    }
+   
 
+  </style>
     <section id="plan">
         <div class="container">
           <h1 class="text-center">PLANES</h1>
@@ -239,7 +273,9 @@
               <div class="plan text-center">
                 <h3>Gratis</h3>
                 <img src="images/Alimento.jpg" alt="in">
-                <p>Acceso básico a la aplicación y funciones limitadas.</p>
+                <p>Acceso básico a la aplicación y
+                  informacion nutricional personalizada.
+                </p>
                 <button id="Obtener" class="btn btn-success"><a href="https://www.figma.com/proto/kuuq1HwLkxScm7BqgqgFvU/Cosmo-Nutrition-%22Vitality%22?type=design&node-id=229-3099&t=BSkW2JOUcLwp6Y5N-0&scaling=scale-down&page-id=126%3A1723&starting-point-node-id=187%3A2589&show-proto-sidebar=1" target="_blank" style="color: white;">Obtener Gratis</a></button>
               </div>
             </div>
@@ -247,7 +283,9 @@
               <div class="plan text-center">
                 <h3>Pro</h3>
                 <img src="images/Protein-Spanish.jpg" alt="in">
-                <p>Acceso completo a todas las funciones y contenido premium.</p>
+                <p>Acceso completo a todas las Funcionalidades
+                  de Vitality.
+                </p>
                 <button id="Obtener" class="btn btn-success"><a href="https://www.figma.com/proto/kuuq1HwLkxScm7BqgqgFvU/Cosmo-Nutrition-%22Vitality%22?type=design&node-id=229-3099&t=BSkW2JOUcLwp6Y5N-0&scaling=scale-down&page-id=126%3A1723&starting-point-node-id=187%3A2589&show-proto-sidebar=1" target="_blank" style="color: white;">Obtener 9.90 Soles</a></button>
               </div>
             </div>
@@ -267,7 +305,7 @@
     
         
     </section>
-    <footer class="text-center text-lg-start bg-success text-white">
+    <footer  class="text-center text-lg-start bg-success text-white">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: green;">
           <div class="me-5 d-none d-lg-block">
             <span>Conectese con nosotros en las redes sociales:</span>
@@ -315,16 +353,16 @@
               Productos
             </h6>
             <p>
-              <a href="#caracteriticas" class="text-reset text-white">Vitaminas</a>
+              <a href="#carouselExampleCaptions" class="text-reset text-white">Vitaminas</a>
             </p>
             <p>
-              <a href="#caracteriticas" class="text-reset text-white">Proteinas</a>
+              <a href="#carouselExampleCaptions" class="text-reset text-white">Proteinas</a>
             </p>
             <p>
-              <a href="#caracteriticas" class="text-reset text-white">Alimentos</a>
+              <a href="#carouselExampleCaptions" class="text-reset text-white">Alimentos</a>
             </p>
             <p>
-              <a href="#caracteriticas" class="text-reset text-white">Recetas</a>
+              <a href="#carouselExampleCaptions" class="text-reset text-white">Recetas</a>
             </p>
           </div>
       
@@ -364,6 +402,7 @@
       © 2023 Vitality.com
     </div>
   </footer>
+  
 </main>
     
 </body>
